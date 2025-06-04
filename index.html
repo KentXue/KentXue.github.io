@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<!--- Basic Page Needs  -->
+	<meta charset="utf-8">
+	<title>我的个人博客</title>
+	<meta name="description" content="Tianyu Xue">
+	<meta name="author" content="Tianyu Xue">
+	<meta name="keywords" content="personal website, portfolio, blog, resume">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Mobile Specific Meta  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/stellarnav.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://kit.fontawesome.com/cfbb0723d5.js" crossorigin="anonymous"></script>
+	<style>
+		.interactive-mind-map {
+			width: 100%;
+			height: 600px; /* 添加固定高度 */
+			margin: 20px 0;
+			border: 1px solid #eee;
+			border-radius: 8px;
+			background-color: #f9f9fb;
+		}
+	</style>
+</head>
+
+<body>
+<!-- 语言切换按钮 -->
+<div class="language-switcher">
+	<button id="lang-zh">中文</button>
+	<button id="lang-en">English</button>
+</div>
+<div id="preloader"></div>
+<header>
+	<div class="container">
+		<div class="row">
+			<!-- 搜索框和按钮 -->
+			<div class="col-lg-2 col-sm-4 col-5 d-flex align-items-center">
+				<div class="chat-container">
+					<input type="text" id="user-question" placeholder="Search……">
+					<div>
+						<button id="ask-button">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-sm-4 col-7">
+				<div class="main-menu stellarnav">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li class="active"><a href="">兴趣宇宙</a>
+							<ul>
+								<li><a href="#">旅游系</a>
+									<ul>
+										<li><a href="#">2025</a></li>
+										<li><a href="#">2024</a></li>
+										<li><a href="#">2023</a></li>
+										<li><a href="#">2018</a></li>
+										<li><a href="#">2017</a></li>
+									</ul>
+								</li>
+								<li><a href="#">运动系</a>
+									<ul>
+										<li><a href="#">滑雪星</a></li>
+										<li><a href="#">游泳星</a></li>
+										<li><a href="#">骑行星</a></li>
+										<li><a href="#">登山星</a></li>
+										<li><a href="#">跑步星</a></li>
+										<li><a href="#">马拉松星</a></li>
+										<li><a href="#">营养星</a></li>
+									</ul>
+								</li>
+								<li><a href="#">艺术系</a>
+									<ul>
+										<li><a href="#">摄影星</a></li>
+										<li><a href="#">音乐星</a></li>
+										<li><a href="#">舞蹈星</a></li>
+									</ul>
+								</li>
+								<li><a href="#">知识系</a>
+									<ul>
+										<li><a href="#">天文星</a></li>
+										<li><a href="#">历史星</a></li>
+										<li><a href="#">营养星</a></li>
+									</ul>
+								</li>
+								<li><a href="#">技能系</a>
+									<ul>
+										<li><a href="#">HAM星</a></li>
+										<li><a href="#">编程星</a></li>
+										<li><a href="#">美食星</a></li>
+									</ul>
+								</li>
+								<li><a href="#">社交系</a>
+									<ul>
+										<li><a href="#">英语星</a></li>
+										<li><a href="#">法语星</a></li>
+										<li><a href="#">志愿者星</a></li>
+									</ul>
+								</li>
+								<li><a href="#">娱乐系</a>
+									<ul>
+										<li><a href="#">地平线4/5</a></li>
+										<li><a href="#">都市天际线</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="programming-blog.html">编程博客</a></li>
+						<li><a href="#">动态</a>
+							<ul>
+								<li><a href="#">最新</a></li>
+								<li><a href="#">最热</a></li>
+							</ul>
+						</li>
+						<li><a href="#">友链</a></li>
+						<li><a href="#">资源</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
+				<div class="lets-chat">
+					<a href="#social-media-section" class="link btn-style-1">联系我</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="hero-area">
+	<div class="hero-element-1"><img src="img/home1/hero-element-1.png" alt=""></div>
+	<div class="hero-element-2"><img src="img/home1/hero-element-2.png" alt=""></div>
+	<div class="hero-element-3"><img src="img/home1/hero-element-3.png" alt=""></div>
+	<div class="hero-element-4"><img src="img/home1/hero-element-4.png" alt=""></div>
+	<div class="hero-banner"><img src="img/home1/team06.png" alt=""></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-12">
+				<h3 class="intro">Hello, I’m</h3>
+				<h2 class="title">Tianyu Xue.</h2>
+				<h3 class="desg">Welcome to my website!</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="interactive-mind-map w-full h-auto">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+		<defs>
+			<filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+				<feGaussianBlur stdDeviation="5" result="blur" />
+				<feComposite in="SourceGraphic" in2="blur" operator="over" />
+			</filter>
+			<linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+				<stop offset="0%" stop-color="#4a90e2" />
+				<stop offset="100%" stop-color="#50e3c2" />
+			</linearGradient>
+		</defs>
+
+		<!-- 背景 -->
+		<rect width="800" height="600" fill="#f9f9fb" />
+
+		<!-- 连接线 -->
+		<g id="connections"></g>
+
+		<!-- 节点 -->
+		<g id="nodes"></g>
+	</svg>
+</div>
+
+<!--<section class="info-tab-area">-->
+<!--	<div class="tab-bg-element"><img src="img/home1/tab-bg-elements.png" alt=""></div>-->
+<!--	<div class="container">-->
+<!--		<div class="info-tab">-->
+<!--			<ul class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--				<li class="nav-item">-->
+<!--					<a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">ABOUT</a>-->
+<!--				</li>-->
+<!--				<li class="nav-item">-->
+<!--					<a class="nav-link" id="service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="service" aria-selected="false">MY SERVICES</a>-->
+<!--				</li>-->
+<!--				<li class="nav-item">-->
+<!--					<a class="nav-link" id="interviews-tab" data-toggle="tab" href="#interviews" role="tab" aria-controls="interviews" aria-selected="false">INTERVIEWS</a>-->
+<!--				</li>-->
+<!--				<li class="nav-item">-->
+<!--					<a class="nav-link" id="awards-tab" data-toggle="tab" href="#awards" role="tab" aria-controls="awards" aria-selected="false">AWARDS</a>-->
+<!--				</li>-->
+<!--				<li class="nav-item">-->
+<!--					<a class="nav-link" id="exhibitions-tab" data-toggle="tab" href="#exhibitions" role="tab" aria-controls="exhibitions" aria-selected="false">EXHIBITIONS</a>-->
+<!--				</li>-->
+<!--			</ul>-->
+<!--			<div class="tab-content" id="myTabContent">-->
+<!--				<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">-->
+<!--					<div class="content-about">-->
+<!--						<div class="row">-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="banner"><img src="img/home1/Untitled-1-01.png" alt=""></div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="content">-->
+<!--									<p class="intro">ABOUT ME</p>-->
+<!--									<h2 class="title">Why hire me for your next project?</h2>-->
+<!--									<p class="text">Meet my startup design agency <a href="#">Shape Rex</a> Currently I am working at <a href="#">CodeNext</a> as Product Designer. Before that I’ve worked at <a href="#">SpurBee</a>, Dhaka as a UX, UI Designer. <br><br>I love to work in User Experience & User Interface designing. Because I love to solve the design problem  and find easy and better solutions to solve it. I always try my best to make good user interface with the best user experience. I have been working as a Visual designer from 6.5 years.</p>-->
+<!--									<a class="more btn-style-1" href="#">LEARN MORE</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="tab-pane fade" id="service" role="tabpanel" aria-labelledby="service-tab">-->
+<!--					<div class="content-service">-->
+<!--						<div class="row">-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><i class="fal fa-bullseye-arrow"></i></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Business Strategy</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><img src="img/home1/service-2.png" alt=""></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Brand Strategy</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><img src="img/home1/service-3.png" alt=""></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Visual Design</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><img src="img/home1/service-4.png" alt=""></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Product Design</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><img src="img/home1/service-5.png" alt=""></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Interactive Design</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-sm-6 col-12">-->
+<!--								<div class="single-service">-->
+<!--									<div class="icon">-->
+<!--										<span class="icon-box"><img src="img/home1/service-6.png" alt=""></span>-->
+<!--									</div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Motion Graphic</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="tab-pane fade" id="interviews" role="tabpanel" aria-labelledby="interviews-tab">-->
+<!--					<div class="content-interview">-->
+<!--						<div class="row">-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-interview">-->
+<!--									<div class="img"><img src="img/home1/interview-1.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Business Strategy</h4>-->
+<!--										<p class="text">There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>-->
+<!--										<a href="#" class="more">SEA MORE <span class="icon"><i class="far fa-long-arrow-alt-right"></i></span></a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-interview">-->
+<!--									<div class="img"><img src="img/home1/interview-2.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Business Strategy</h4>-->
+<!--										<p class="text">There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>-->
+<!--										<a href="#" class="more">SEA MORE <span class="icon"><i class="far fa-long-arrow-alt-right"></i></span></a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-interview">-->
+<!--									<div class="img"><img src="img/home1/interview-3.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Business Strategy</h4>-->
+<!--										<p class="text">There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>-->
+<!--										<a href="#" class="more">SEA MORE <span class="icon"><i class="far fa-long-arrow-alt-right"></i></span></a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-interview">-->
+<!--									<div class="img"><img src="img/home1/interview-4.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Business Strategy</h4>-->
+<!--										<p class="text">There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>-->
+<!--										<a href="#" class="more">SEA MORE <span class="icon"><i class="far fa-long-arrow-alt-right"></i></span></a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="awards-tab">-->
+<!--					<div class="content-awards">-->
+<!--						<div class="row">-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-awards">-->
+<!--									<div class="img"><img src="img/home1/award-1.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Awards Name Here</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-awards">-->
+<!--									<div class="img"><img src="img/home1/award-2.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Awards Name Here</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-awards">-->
+<!--									<div class="img"><img src="img/home1/award-3.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Awards Name Here</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-6 col-12">-->
+<!--								<div class="single-awards">-->
+<!--									<div class="img"><img src="img/home1/award-4.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="title">Awards Name Here</h4>-->
+<!--										<p class="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="tab-pane fade" id="exhibitions" role="tabpanel" aria-labelledby="exhibitions-tab">-->
+<!--					<div class="content-exhibitions">-->
+<!--						<div class="row">-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-1.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-2.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-3.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-4.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-5.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="col-lg-4 col-md-6 col-12">-->
+<!--								<div class="single-exhibition">-->
+<!--									<div class="img"><img src="img/home1/exhibition-6.png" alt=""></div>-->
+<!--									<div class="content">-->
+<!--										<h4 class="name">Can you help translate this site into a foreign? </h4>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+
+<section class="project-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<p class="intro">MY PROJECTS</p>
+					<h2 class="title">Swipe right to view more.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="project-carousel owl-carousel">
+		<div class="single-project">
+			<div class="img">
+				<img src="img/home1/wuziqi-preview.png" alt="五子棋游戏界面预览图">
+			</div>
+			<div class="content">
+				<p class="type">FRONTEND, GAME</p>
+				<h2 class="title">双人五子棋对战平台</h2>
+				<p class="text">基于HTML开发的五子棋游戏，拥有美观的界面和流畅的交互体验，暂不支持人机对战和在线对战功能。</p>
+				<a class="read btn-style-1" href="https://github.com/XzanderAlfred/WuZiQi">查看源码</a>
+			</div>
+		</div>
+		<div class="single-project">
+			<div class="img"><img src="img/home1/dashboard_admin.png" alt=""></div>
+			<div class="content">
+				<p class="type text-yellow-500 font-semibold text-sm mb-2 flex items-center">
+					<i class="fa fa-cogs mr-2"></i> 开发中……
+				</p>
+				<h2 class="title">在线投票系统</h2>
+			</div>
+		</div>
+		<div class="single-project">
+			<div class="img"><img src="img/home1/architecture1.png" alt=""></div>
+			<div class="content">
+				<p class="type text-yellow-500 font-semibold text-sm mb-2 flex items-center">
+					<i class="fa fa-cogs mr-2"></i> 开发中……
+				</p>
+				<h2 class="title">云图库平台</h2>
+			</div>
+		</div>
+		<div class="single-project">
+			<div class="img"><img src="img/home1/to-do-list.png" alt=""></div>
+			<div class="content">
+				<p class="type text-yellow-500 font-semibold text-sm mb-2 flex items-center">
+					<i class="fa fa-cogs mr-2"></i> 开发中……
+				</p>
+				<h2 class="title">用户中心</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 新的问题模块 -->
+<section class="question-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>常见问题解答</h2>
+				<!-- 搜索框 -->
+				<input type="text" id="faq-search" placeholder="请在此处输入问题">
+				<div id="question-list" class="faq-container">
+					<!-- 这里将动态插入搜索结果 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	// 预定义问答库
+	const qaLibrary = {
+		"你好": "你好呀！",
+		"今天天气怎么样": "我不太清楚今天的天气呢，你可以查看天气预报。",
+		"再见": "再见啦，祝你有个好心情！",
+		"你是谁": "我是薛天宇，目前是大二在读学生，未来想成为一名程序员，正在努力学习编程知识和技能。",
+		"你的专业是什么": "我的专业是计算机科学与技术。",
+		"为什么想成为程序员": "因为对编程有浓厚兴趣，喜欢通过代码解决问题、创造新事物，也看好互联网行业的发展前景。",
+		"目前掌握哪些技术": "目前掌握Java、Python等，熟悉Django、React的使用；了解C、JavaScript和MySQL的基本操作。",
+		"有过哪些项目经历": "独立开发过个人博客网站、云图库平台、简易记账工具等，实现了用户注册登录、数据可视化等；参与过[项目名称2，如团队协作的校园服务小程序开发等]，负责[具体工作，如后端接口开发/前端页面搭建等]。",
+		"学习编程的过程中遇到过哪些困难": "刚开始学习[某编程语言/技术]时，对[具体概念，如面向对象编程/异步编程等]理解困难，后来通过[解决方式，如查阅技术文档/观看教学视频/向学长请教等]逐渐掌握。",
+		"未来的学习计划是什么": "接下来想深入学习人工智能，尝试参与[项目类型，如开源项目/实际商业项目等]，提升自己的实战能力。",
+		"为什么要做这个个人网站": "想通过个人网站展示自己的学习成果和项目经验，方便与同行交流，也希望能吸引实习机会或得到更多学习资源。",
+		"如何联系你": "可以通过邮箱xuetianyu@mails.jlau.edu.cn与我取得联系，期待与你交流！",
+		"你平时有什么兴趣爱好": "我特别喜欢滑雪、游泳、骑车等各种运动，享受在运动中挑战自我、释放活力的感觉。同时也热爱旅行，喜欢探索不同的地方，感受多样的风土人情。",
+		"滑雪有什么特别的体验": "滑雪真的超刺激！从雪坡飞驰而下，耳边只有呼啸的风声，每一次转弯都充满挑战，成功滑下陡坡时的成就感无可比拟，而且在雪场还能欣赏到超美的雪景。",
+		"最喜欢哪种游泳方式": "我比较喜欢自由泳，感觉动作舒展又高效，在水中快速前进的时候，能真切感受到和水融为一体，特别畅快。",
+		"骑车去过哪些有趣的地方": "我骑车去过[具体地点]，沿着[路线名称]骑行，一路上风景美不胜收，路边的田野、山川，还有偶遇的村庄，都让我印象深刻。",
+		"旅行中最难忘的地方是哪里": "那一定是川西，那里的雪山、草原、牦牛、寺庙[特色景观或人文风情，如古老的建筑、热情的居民]，让我深深着迷，感觉每一处都充满故事，待多久都不会腻。",
+		"旅行中遇到过什么有趣的事": "在云南省德宏傣族景颇族自治州旅行时，偶然参加了当地景颇族的目瑙纵歌节，和当地人一起载歌载舞，还学会了几句当地方言，这种融入当地生活的体验太有趣了。",
+		"运动和旅行对你有什么影响": "运动让我保持健康的身体和积极的心态，而旅行拓宽了我的视野，让我接触到不同的文化和生活方式，它们都让我变得更加包容和自信。",
+		"下一个想去旅行的地方是哪里": "我特别想去阿尔卑斯山周边国家，那里的跨国滑雪场、峡谷地貌、角峰地貌、奶酪火锅等一直吸引着我，已经在做攻略，期待早日成行！",
+		"会和朋友一起运动旅行吗": "当然！和朋友一起运动旅行超开心，和四个朋友一起去过海参崴，大家可以互相鼓励、分享快乐，一起克服旅行中的困难，这些经历都成为了珍贵的回忆。"
+	};
+
+	// 计算 Levenshtein 距离
+	function levenshteinDistance(a, b) {
+		const m = a.length;
+		const n = b.length;
+		const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+
+		for (let i = 0; i <= m; i++) {
+			dp[i][0] = i;
+		}
+		for (let j = 0; j <= n; j++) {
+			dp[0][j] = j;
+		}
+
+		for (let i = 1; i <= m; i++) {
+			for (let j = 1; j <= n; j++) {
+				if (a[i - 1] === b[j - 1]) {
+					dp[i][j] = dp[i - 1][j - 1];
+				} else {
+					dp[i][j] = Math.min(
+							dp[i - 1][j] + 1,
+							dp[i][j - 1] + 1,
+							dp[i - 1][j - 1] + 1
+					);
+				}
+			}
+		}
+
+		return dp[m][n];
+	}
+
+	// 模糊匹配函数
+	function fuzzyMatch(question) {
+		let minDistance = Infinity;
+		let bestMatch = null;
+
+		for (const key in qaLibrary) {
+			const distance = levenshteinDistance(question, key);
+			if (distance < minDistance) {
+				minDistance = distance;
+				bestMatch = key;
+			}
+		}
+
+		return bestMatch;
+	}
+
+	// 搜索框输入事件监听
+	document.getElementById('faq-search').addEventListener('input', function () {
+		const question = this.value;
+		const responseElement = document.getElementById('question-list');
+		const bestMatch = fuzzyMatch(question);
+		if (bestMatch) {
+			responseElement.innerHTML = `<h4>${bestMatch}</h4><p>${qaLibrary[bestMatch]}</p>`;
+		} else {
+			responseElement.textContent = "抱歉，我没有找到对应的答案。";
+		}
+	});
+
+	document.getElementById('lang-zh').addEventListener('click', function () {
+		setLanguage('zh');
+	});
+
+	document.getElementById('lang-en').addEventListener('click', function () {
+		setLanguage('en');
+	});
+
+	function setLanguage(lang) {
+		const elements = document.querySelectorAll('[data-lang-en]');
+		elements.forEach(function (element) {
+			if (lang === 'en') {
+				element.textContent = element.getAttribute('data-lang-en');
+			} else {
+				// 恢复原始的中文内容
+				element.textContent = element.getAttribute('data-original') || element.textContent;
+				element.setAttribute('data-original', element.textContent);
+			}
+		});
+
+		// 处理输入框的占位符
+		const input = document.getElementById('user-question');
+		if (lang === 'en') {
+			input.placeholder = input.getAttribute('data-lang-en');
+		} else {
+			input.placeholder = input.getAttribute('data-original-placeholder') || input.placeholder;
+			input.setAttribute('data-original-placeholder', input.placeholder);
+		}
+	}
+
+	// 全局模糊搜索函数
+	function globalFuzzySearch(question) {
+		const allElements = document.body.getElementsByTagName('*');
+		let minDistance = Infinity;
+		let bestMatchElement = null;
+
+		for (let i = 0; i < allElements.length; i++) {
+			const element = allElements[i];
+			const text = element.textContent || element.innerText;
+			const distance = levenshteinDistance(question, text);
+			if (distance < minDistance) {
+				minDistance = distance;
+				bestMatchElement = element;
+			}
+		}
+
+		if (bestMatchElement) {
+			bestMatchElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
+	// 点击按钮事件
+	document.getElementById('ask-button').addEventListener('click', function () {
+		const userQuestion = document.getElementById('user-question').value;
+		const responseElement = document.getElementById('chat-response');
+
+		const bestMatch = fuzzyMatch(userQuestion);
+		if (bestMatch) {
+			globalFuzzySearch(bestMatch);
+			responseElement.textContent = qaLibrary[bestMatch];
+		} else {
+			responseElement.textContent = "抱歉，我没有找到对应的答案。";
+		}
+	});
+
+	// 回车事件绑定
+	document.getElementById('user-question').addEventListener('keydown', function (event) {
+		if (event.key === 'Enter') {
+			const userQuestion = this.value;
+			const responseElement = document.getElementById('chat-response');
+
+			const bestMatch = fuzzyMatch(userQuestion);
+			if (bestMatch) {
+				globalFuzzySearch(bestMatch);
+				responseElement.textContent = qaLibrary[bestMatch];
+			} else {
+				responseElement.textContent = "抱歉，我没有找到对应的答案。";
+			}
+		}
+	});
+</script>
+
+<section class="social-area" id="social-media-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<p class="intro">CONTACT WITH ME</p>
+					<h2 class="title">Let’s Be Friends</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">GitHub</h3>
+					<p class="info">Kent Xue</p>
+					<span class="icon"><i class="fa-brands fa-github"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">QQ</h3>
+					<p class="info">3383963784</p>
+					<span class="icon"><i class="fa-brands fa-qq"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">Instagram</h3>
+					<p class="info">Kent_Xue</p>
+					<span class="icon"><i class="fab fa-instagram"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">Twitter</h3>
+					<p class="info">Random thoughts</p>
+					<span class="icon"><i class="fab fa-twitter"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">Facebook</h3>
+					<p class="info">Tianyu Xue</p>
+					<span class="icon"><i class="fa-brands fa-facebook"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="single-social">
+					<h3 class="title">Email</h3>
+					<p class="info">xuetinayu@mails.jlau.edu.cn</p>
+					<span class="icon"><i class="far fa-envelope"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="footer-top-area">
+			<div class="row">
+				<div class="col-lg-4 col-sm-3 col-12">
+					<div class="f-logo">
+						<a href="index.html" class="link"><img src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-5 col-12 d-flex justify-content-center">
+					<div class="f-title w-100">
+						<div class="card bg-transparent border-0">
+							<div class="card-body px-0 py-1">
+								<h2 class="title text-center text-white mb-0" style="font-size: clamp(1.2rem, 2vw, 1.8rem);">
+									永远自由、勇敢、浪漫和坚定
+								</h2>
+								<p class="text-center text-white-75 mt-1">
+									<i class="fa fa-heart text-danger"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<p class="copyright">Copyright © 2025 Tianyu Xue. Released under the MIT License. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+<!-- Scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/stellarnav.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/theme.js"></script>
+<!-- 将script.js放在最后，并使用defer -->
+<script src="js/script.js" defer></script>
+</body>
+
+</html>
