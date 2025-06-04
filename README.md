@@ -12,5 +12,6 @@ your-website/
 └── js/
     └── script.js
 preview:
-![image](https://github.com/user-attachments/assets/9ff5de81-6695-4693-8a80-c271a550c4a9)
-![image](https://github.com/user-attachments/assets/8886eb9b-f611-401c-bbca-8687065765f7)
+![image](https://github.com/user-attachments/assets/6a2f2b6a-891a-4a91-9195-830e50a528ef)
+![image](https://github.com/user-attachments/assets/4303ac87-7662-4558-9acd-3e9dcefd4348)
+
